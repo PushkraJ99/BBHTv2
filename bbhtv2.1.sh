@@ -521,7 +521,7 @@ echo ""
 echo "${GREEN} [+] Installing tomnomnom tools ${RESET}"
 echo "${GREEN} check out his other tools as well  ${RESET}"
 {
-go install github.com/tomnomnom/hacks/concurl@latest
+go install github.com/tomnomnom/concurl@latest
 go install github.com/tomnomnom/unfurl@latest
 go install github.com/tomnomnom/hacks/anti-burl@latest
 go install github.com/tomnomnom/hacks/filter-resolved@latest
