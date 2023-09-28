@@ -47,26 +47,26 @@ sudo aptitude install -t kali-rolling wpscan #Wordpress Automated Vulnerability 
 #Using above method you can install any supported tool from kali's repositories as per your need :)
 
 
-sudo apt-fast install -y apt-transport-https
-sudo apt-fast install -y libcurl4-ssl-dev
-sudo apt-fast install -y libssl-dev
-sudo apt-fast install -y jq
-sudo apt-fast install -y ruby-full
-sudo apt-fast install -y libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
-sudo apt-fast install -y build-essential libssl-dev libffi-dev python-dev
-sudo apt-fast install -y python-setuptools
-sudo apt-fast install -y libldns-dev
-sudo apt-fast install -y python3
-sudo apt-fast install -y python3-pip
-sudo apt-fast install -y python-dnspython
-sudo apt-fast install -y git gcc make libcap-dev
-sudo apt-fast install -y npm
-sudo apt-fast install -y nmap phantomjs
-sudo apt-fast install -y gem
-sudo apt-fast install -y perl
-sudo apt-fast install -y parallel
-sudo apt-fast install -y tmux
-sudo apt-fast install -y dnsutils
+sudo apt install  apt-transport-https
+sudo apt install  libcurl4-ssl-dev
+sudo apt install  libssl-dev
+sudo apt install  jq
+sudo apt install ruby-full
+sudo apt install libcurl4-openssl-dev libxml2 libxml2-dev libxslt1-dev ruby-dev build-essential libgmp-dev zlib1g-dev
+sudo apt install build-essential libssl-dev libffi-dev python-dev
+sudo apt install python-setuptools
+sudo apt install libldns-dev
+sudo apt install python3
+sudo apt install python3-pip
+sudo apt install python-dnspython
+sudo apt install git gcc make libcap-dev
+sudo apt install npm
+sudo apt install nmap phantomjs
+sudo apt install gem
+sudo apt install perl
+sudo apt install parallel
+sudo apt install tmux
+sudo apt install dnsutils
 pip3 install jsbeautifier
 echo ""
 } > /dev/null 2>&1
@@ -521,12 +521,12 @@ echo ""
 echo "${GREEN} [+] Installing tomnomnom tools ${RESET}"
 echo "${GREEN} check out his other tools as well  ${RESET}"
 {
-go get -u github.com/tomnomnom/hacks/concurl
-go get -u github.com/tomnomnom/unfurl
-go get -u github.com/tomnomnom/hacks/anti-burl
-go get -u github.com/tomnomnom/hacks/filter-resolved
-go get -u github.com/tomnomnom/fff
-go get -u github.com/tomnomnom/qsreplace
+go install github.com/tomnomnom/hacks/concurl@latest
+go install github.com/tomnomnom/unfurl@latest
+go install github.com/tomnomnom/hacks/anti-burl@latest
+go install github.com/tomnomnom/hacks/filter-resolved@latest
+go install github.com/tomnomnom/fff@latest
+go install github.com/tomnomnom/qsreplace@latest
 } > /dev/null 2>&1
 echo "${BLUE} Done ${RESET}"
 echo ""
